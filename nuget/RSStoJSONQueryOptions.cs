@@ -12,7 +12,6 @@ namespace APIVerve.API.RSStoJSON
     {
         /// <summary>
         /// The URL of the RSS feed you want converted into JSON format
-        /// Example: https://www.nasa.gov/rss/dyn/breaking_news.rss
         /// </summary>
         [JsonProperty("url")]
         public string Url { get; set; }
