@@ -10,20 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_rsstojson',
-    version='1.1.12',
+    version='1.1.13',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
     description='RSS to JSON is a simple tool for converting RSS feeds into JSON format. It returns the RSS feed in JSON format.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com',
-    project_urls={
-        'Homepage': 'https://apiverve.com',
-        'Documentation': 'https://docs.apiverve.com/ref/rsstojson',
-        'Source': 'https://github.com/apiverve/rsstojson-api',
-        'Bug Tracker': 'https://github.com/apiverve/rsstojson-api/issues'
-    },
+    url='https://apiverve.com/marketplace/rsstojson?utm_source=pypi&utm_medium=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
