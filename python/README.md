@@ -290,8 +290,9 @@ from apiverve_rsstojson.apiClient import RsstojsonAPIClient
 
 api = RsstojsonAPIClient("[YOUR_API_KEY]")
 
+query = { "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss" }
+
 try:
-    query = { "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss" }
     result = api.execute(query)
     print(result)
 finally:
