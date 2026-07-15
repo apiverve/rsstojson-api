@@ -4,27 +4,39 @@ declare module '@apiverve/rsstojson' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface rsstojsonResponse {
     status: string;
     error: string | null;
     data: RSStoJSONData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface RSStoJSONData {
-      source:     string;
-      articles:   number;
-      maxReached: boolean;
+      source:     null | string;
+      articles:   number | null;
+      maxReached: boolean | null;
       feed:       Feed[];
   }
   
   interface Feed {
-      website:     Website;
-      title:       string;
-      pubDate:     string;
-      description: string;
-      link:        string;
+      website:     Website | null;
+      title:       null | string;
+      pubDate:     null | string;
+      description: null | string;
+      link:        null | string;
   }
   
   enum Website {
