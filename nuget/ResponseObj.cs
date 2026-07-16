@@ -25,6 +25,9 @@ namespace APIVerve.API.RSStoJSON
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -33,10 +36,10 @@ namespace APIVerve.API.RSStoJSON
         public string Source { get; set; }
 
         [JsonProperty("articles")]
-        public long Articles { get; set; }
+        public long? Articles { get; set; }
 
         [JsonProperty("maxReached")]
-        public bool MaxReached { get; set; }
+        public bool? MaxReached { get; set; }
 
         [JsonProperty("feed")]
         public Feed[] Feed { get; set; }
@@ -45,7 +48,7 @@ namespace APIVerve.API.RSStoJSON
     public partial class Feed
     {
         [JsonProperty("website")]
-        public Website Website { get; set; }
+        public Website? Website { get; set; }
 
         [JsonProperty("title")]
         public string Title { get; set; }
@@ -58,6 +61,18 @@ namespace APIVerve.API.RSStoJSON
 
         [JsonProperty("link")]
         public Uri Link { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 
     public enum Website { Nasa };
