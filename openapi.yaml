@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: RSS to JSON
   description: >-
-    RSS to JSON is a simple tool for converting RSS feeds into JSON format. It
-    returns the RSS feed in JSON format.
+    RSS to JSON converts any RSS feed URL into structured JSON in real time.
+    Each response returns the source domain, article counts, headlines,
+    publication dates, summaries, and direct article links.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/rsstojson:
     post:
-      summary: Convert RSS Feed to JSON
+      summary: RSS to JSON
       description: >-
         RSS to JSON is a simple tool for converting RSS feeds into JSON format.
         It returns the RSS feed in JSON format.
@@ -62,8 +63,7 @@ paths:
                         has been unresolved since the earliest days of X-ray
                         astronomy. Their findings are described in a paper
                         published in The Astrophysical Journal Letters, […]
-                      link: >-
-                        https://www.nasa.gov/missions/ixpe/nasa-ixpes-longest-observation-solves-black-hole-jets-mystery/
+                      link: https://www.nasa.gov/missions/ixpe/nasa-ixpes-longest-observation-solves-black-hole-jets-mystery/
                     - website: NASA
                       title: >-
                         NASA Launches Research Program for Students to Explore
@@ -78,14 +78,12 @@ paths:
                         next-generation solutions that benefit life on Earth and
                         deep-space exploration. With up to $380,000 in total
                         prize funding, NASA’s ORBIT challenges […]
-                      link: >-
-                        https://www.nasa.gov/learning-resources/research-program-for-students/
+                      link: https://www.nasa.gov/learning-resources/research-program-for-students/
                     - website: NASA
                       title: "Through Astronaut Eyes: 25 Years of Life in Orbit\_\_"
                       pubDate: Tue, 16 Dec 2025 20:35:35 +0000
                       description: "After 25 years of continuous human presence in space, the International Space Station remains a training and proving ground for deep space missions, enabling NASA to focus on Artemis missions to the Moon and Mars. The orbiting laboratory is also a living archive of human experience, culture, and connection.\_\_ Creating community With 290 visitors from […]"
-                      link: >-
-                        https://www.nasa.gov/centers-and-facilities/johnson/through-astronaut-eyes-25-years-of-life-in-orbit/
+                      link: https://www.nasa.gov/centers-and-facilities/johnson/through-astronaut-eyes-25-years-of-life-in-orbit/
                     - website: NASA
                       title: >-
                         NASA Ignites New Golden Age of Exploration, Innovation
@@ -98,8 +96,7 @@ paths:
                         mission around the Moon in more than 50 years, as well
                         as built upon its momentum toward a human return to the
                         lunar surface in preparation to […]
-                      link: >-
-                        https://www.nasa.gov/news-release/nasa-ignites-new-golden-age-of-exploration-innovation-in-2025/
+                      link: https://www.nasa.gov/news-release/nasa-ignites-new-golden-age-of-exploration-innovation-in-2025/
                     - website: NASA
                       title: >-
                         How Small Is Too Small? Volunteers Help NASA Test Lake
@@ -111,8 +108,7 @@ paths:
                         been collecting water level data in lakes since 2017.
                         Now, the LOCSS team has used these data to examine the
                         accuracy of water level measurements made from space.
-                      link: >-
-                        https://science.nasa.gov/get-involved/citizen-science/how-small-is-too-small-volunteers-help-nasa-test-lake-monitoring-from-space/
+                      link: https://science.nasa.gov/get-involved/citizen-science/how-small-is-too-small-volunteers-help-nasa-test-lake-monitoring-from-space/
                     - website: NASA
                       title: >-
                         NASA JPL Shakes Things Up Testing Future Commercial
@@ -126,8 +122,7 @@ paths:
                         Launches involve brutal shaking and astonishingly loud
                         noises, and testing in these facilities mimics those
                         conditions to help ensure mission hardware can […]
-                      link: >-
-                        https://www.nasa.gov/centers-and-facilities/jpl/nasa-jpl-shakes-things-up-testing-future-commercial-lunar-spacecraft/
+                      link: https://www.nasa.gov/centers-and-facilities/jpl/nasa-jpl-shakes-things-up-testing-future-commercial-lunar-spacecraft/
                     - website: NASA
                       title: Peekaboo!
                       pubDate: Tue, 16 Dec 2025 17:27:30 +0000
@@ -151,8 +146,7 @@ paths:
                         challenge. The Toxicology and Environmental Chemistry
                         (TEC) group at Johnson Space Center (JSC) is made up of
                         2 interrelated groups: Toxicology […]
-                      link: >-
-                        https://www.nasa.gov/directorates/esdmd/hhp/toxicology-and-environmental-chemistry/
+                      link: https://www.nasa.gov/directorates/esdmd/hhp/toxicology-and-environmental-chemistry/
                     - website: NASA
                       title: Statistics and Data Science
                       pubDate: Tue, 16 Dec 2025 16:14:41 +0000
@@ -165,8 +159,7 @@ paths:
                         support to groups within the NASA JSC Human Health and
                         Performance Directorate and other NASA communities. They
                         have expertise […]
-                      link: >-
-                        https://www.nasa.gov/directorates/esdmd/hhp/biostatistics-and-data-science/
+                      link: https://www.nasa.gov/directorates/esdmd/hhp/biostatistics-and-data-science/
                     - website: NASA
                       title: >-
                         One of NASA’s Key Cameras Orbiting Mars Takes 100,000th
@@ -180,8 +173,7 @@ paths:
                         snapped its 100,000th image of the surface with its
                         HiRISE camera. Short for High Resolution Imaging Science
                         Experiment, HiRISE is […]
-                      link: >-
-                        https://www.nasa.gov/missions/mars-reconnaissance-orbiter/one-of-nasas-key-cameras-orbiting-mars-takes-100000th-image/
+                      link: https://www.nasa.gov/missions/mars-reconnaissance-orbiter/one-of-nasas-key-cameras-orbiting-mars-takes-100000th-image/
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
