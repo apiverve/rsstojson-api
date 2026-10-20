@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/rsstojson",
-  "version": "1.2.0",
-  "description": "RSS to JSON is a simple tool for converting RSS feeds into JSON format. It returns the RSS feed in JSON format.",
+  "version": "1.2.2",
+  "description": "RSS to JSON converts any RSS feed URL into structured JSON in real time. Each response returns the source domain, article counts, headlines, publication dates, summaries, and direct article links.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "rss to json", "rss to json api", "rss to json tool", "rss to json software", "rss to json service"
+    "rss to json api", "rss feed parser", "convert rss to json", "parse rss feed", "rss to json converter"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/rsstojson-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/rsstojson?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/rsstojson?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
