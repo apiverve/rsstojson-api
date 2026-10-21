@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/rsstojson",
+    "description": "RSS to JSON converts any RSS feed URL into structured JSON in real time. Each response returns the source domain, article counts, headlines, publication dates, summaries, and direct article links.",
+    "version": "1.2.2",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "rsstojson",
+        "rss to json api",
+        "rss feed parser",
+        "convert rss to json",
+        "parse rss feed",
+        "rss to json converter"
+    ],
+    "homepage": "https://apiverve.com/marketplace/rsstojson?utm_source=php&utm_medium=referral&utm_content=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/rsstojson",
+        "source": "https://github.com/apiverve/rsstojson-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Rsstojson\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Rsstojson\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
