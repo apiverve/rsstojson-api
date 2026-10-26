@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/rsstojson",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "RSS to JSON converts any RSS feed URL into structured JSON in real time. Each response returns the source domain, article counts, headlines, publication dates, summaries, and direct article links.",
   "main": "index.js",
   "types": "index.d.ts",
