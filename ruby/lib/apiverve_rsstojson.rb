@@ -4,6 +4,6 @@ require_relative "apiverve_rsstojson/client"
 
 module APIVerve
   module Rsstojson
-    VERSION = "1.2.2"
+    VERSION = "1.2.4"
   end
 end
